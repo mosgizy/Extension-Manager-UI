@@ -27,9 +27,9 @@ const Nav = () => {
     <section className="wrapper">
       <nav className="bg-primary-0 shadow-md dark:bg-primary-700 px-4 py-2 rounded-2xl">
         <div className="flex justify-between items-center">
-          <img src="../assets/images/logo.svg" alt="logo" />
+          <img src="./images/logo.svg" alt="logo" />
           <div onClick={toggleTheme} className="flex-to-center bg-primary-200 dark:bg-primary-600 px-3 py-3 rounded-xl cursor-pointer">
-            <img src={isDark ? '../assets/images/icon-sun.svg' : '../assets/images/icon-moon.svg'} alt="dark" />
+            <img src={isDark ? './images/icon-sun.svg' : './images/icon-moon.svg'} alt="dark" />
           </div>
         </div>
       </nav>
