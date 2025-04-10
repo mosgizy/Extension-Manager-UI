@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+@config "../tailwind.config.js";
+
+@layer base {
+	:root {
+		/* neutral*/
+
+		--neutral-900: hsl(227, 75%, 14%);
+		--neutral-800: hsl(226, 25%, 17%);
+		--neutral-700: hsl(225, 23%, 24%);
+		--neutral-600: hsl(226, 11%, 37%);
+		--neutral-300: hsl(0, 0%, 78%);
+		--neutral-200: hsl(217, 61%, 90%);
+		--neutral-100: hsl(0, 0%, 93%);
+		--neutral-0: hsl(200, 60%, 99%);
+
+		/* red */
+
+		--red-400: hsl(3, 86%, 64%);
+		--red-500: hsl(3, 71%, 56%);
+		--red-700: hsl(3, 77%, 44%);
+
+		/* linear gradient */
+
+		--Light-Gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+		--Dark-Gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+	}
+}
+
+@theme {
+	--shadow-md: 0 2px 15px rgba(0, 0, 0, 0.09), 0 -2px 15px rgba(0, 0, 0, 0.09);
+}
+
+@layer components {
+	.flex-to-center {
+		@apply flex justify-center items-center;
+	}
+
+	.wrapper {
+		@apply max-w-[85%] mx-auto;
+	}
+}
